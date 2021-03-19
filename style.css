@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+}
+
+header{
+    text-align: center;
+    background-color: purple;
+    color:white;
+    grid-area:header;
+    padding:10px;
+}
+
+main{
+    grid-area:main;
+    background-color: lavender;
+}
+
+aside{
+    grid-area:aside;
+    color:white;
+    background-color: rebeccapurple;
+}
+
+footer{
+    grid-area:footer;
+    color:white;
+    background-color: purple;
+}
+
+.main__block-1{
+    
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    justify-items: center;
+}
+
+.main__block-1__card{
+    background-color: orange;  
+    width:300px;    
+    display: grid; 
+    justify-items: center;
+}
